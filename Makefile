@@ -9,7 +9,7 @@ tag:
 	@echo "Tagged as $(TAG)"
 
 install: 
-	@install i2psnark.desktop ${DESTDIR}/usr/share/applications/i2psnark.desktop
+	@install -D i2psnark.desktop ${DESTDIR}/usr/share/applications/i2psnark.desktop
 
 archive: tag
 	@git archive --format=tar --prefix=$(NAME)-$(VERSION)/ HEAD > $(NAME)-$(VERSION).tar
