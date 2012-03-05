@@ -55,6 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc
 %{_datadir}/applications/i2psnark.desktop
+%{_bindir}/i2psnark-tool
 
 
 %changelog
