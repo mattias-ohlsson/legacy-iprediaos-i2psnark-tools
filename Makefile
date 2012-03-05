@@ -10,6 +10,7 @@ tag:
 
 install: 
 	@install -D i2psnark.desktop ${DESTDIR}/usr/share/applications/i2psnark.desktop
+	@install -m 755 i2psnark-tool ${DESTDIR}/usr/bin/i2psnark-tool
 
 archive: tag
 	@git archive --format=tar --prefix=$(NAME)-$(VERSION)/ HEAD > $(NAME)-$(VERSION).tar
