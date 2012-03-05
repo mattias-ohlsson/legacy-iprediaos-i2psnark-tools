@@ -21,7 +21,7 @@ Configuration and tools for I2PSnark.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-#make install DESTDIR=$RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT
 
 
 %post
