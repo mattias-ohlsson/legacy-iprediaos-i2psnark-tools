@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Add torrent to i2psnark directory
-cp --update $1 /home/shares/Downloads/
+cp --update "$1" /home/shares/Downloads/
