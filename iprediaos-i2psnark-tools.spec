@@ -39,7 +39,13 @@ fi
 
 # Reload configuration
 service i2p condrestart > /dev/null 2>&1
+/usr/bin/update-desktop-database &> /dev/null || :
 exit 0
+
+
+%postun
+/usr/bin/update-desktop-database &> /dev/null || :
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
